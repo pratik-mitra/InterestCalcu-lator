@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                             amount = Double.parseDouble(amountText.getText().toString());
                             rate = Double.parseDouble(rateText.getText().toString());
                             year = Integer.parseInt(yearText.getText().toString());
-                            Double compoundInterest = interestService.calculateSimpleInterest(amount, rate, year);
+                            Double compoundInterest = interestService.calculateCompoundInterest(amount, rate, year);
                             resultText.setText(compoundInterest.toString());
                             Log.v(TAG, "index=" + compoundInterest);
                         }
